@@ -87,7 +87,7 @@ export default function Register(){
                     />
 
                     <input type="text"
-                           placeholder="Whatsapp"
+                           placeholder="Whatsapp"//criar mascara
                            value={whatsapp}
                            onChange={e => setWhatsapp(e.target.value)}
                     />
