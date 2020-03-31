@@ -1,4 +1,4 @@
-const crypto = require('crypto')
+
 
 const connection = require('../database/connection')
 
@@ -20,6 +20,8 @@ module.exports = {
             ong_id
 
         }); //retorna um array com um só index, e pega o id desse index
+
+        //console.log(res.headers.authorization)
 
         return res.json({id})
 

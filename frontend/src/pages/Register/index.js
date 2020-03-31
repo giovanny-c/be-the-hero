@@ -35,7 +35,7 @@ export default function Register(){
         }
 
         try{
-            const res = await api.post('ongs', data) //manda o data para a rota '/ongs'
+            const res = await api.post('ongs', data) //acessa a rota'/ongs' pelo metodo post, mandando os dados de cadastro em JSON, que será usado pelo backend
 
             alert(`Seu id de acesso ${res.data.id}`)//retorna o id, esse id retorna do metodo OngContoller.create do backend, ele é criado pelo metodo antes de inserir a query no banco
 
